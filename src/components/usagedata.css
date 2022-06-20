@@ -1,0 +1,15 @@
+.chart{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+  }
+  
+  .chartBox{
+    flex: 1;
+    font-style: 20px;
+    margin: 0px 20px;
+  }  
+  
+  .chartTitle{
+    font-style: 50px;
+  }

@@ -1,6 +1,13 @@
 import React from 'react';
 import '../../App.css';
+import Usagedata from '../Usagedata';
 
 export default function Usage() {
-  return <h1 className='usage'>USAGE</h1>;
-}
+  return(
+  <div>
+    <div className="container">
+      <Usagedata />
+    </div>
+  </div>
+    )
+  }

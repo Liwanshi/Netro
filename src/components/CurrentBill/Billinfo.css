@@ -1,10 +1,10 @@
- .featured{
+ .bill{
     width: 100%;
     display: flex;
     justify-content: space-between;
   }
   
-  .featuredItem{
+  .billItem{
     width: 300px;
     display: flex;
     align-items: center;
@@ -19,33 +19,33 @@
     margin-bottom: 20px;
   }
   
-  .featuredTitle{
+  .billTitle{
     font-style: 20px;
   }
   
-  .featuredConsumtionContainer{
+  .billConsumtionContainer{
     margin: 10px 10px;
     display: flex;
     align-items: center;
   }
   
-  .featuredConsumption{
+  .billConsumption{
     font-size: 30px;
     font-weight: 600;
   }
   
-  .featuredConsumptionRate{
+  .billConsumptionRate{
     display: flex;
     align-items: center;
     margin-left: 20px;
   }
   
-  .featuredIcon{
+  .billIcon{
     font-size: 14px;
     margin-left: 5px;
     color: green;
   }
-  .featuredSubtitle{
+  .billSubtitle{
     color: gray;
     font-style: 10px;
     font-weight: 200;

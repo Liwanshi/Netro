@@ -20,11 +20,11 @@ export default function Billinfo() {
 
 
   return (
-    <div className="featured">
-      <div className="featuredItem">
-        <span className="featuredTitle">Current Bill amount</span>
-          <div className="featuredConsumtionContainer">
-          <span className="featuredConsumption">${bill}</span>
+    <div className="bill">
+      <div className="billItem">
+        <span className="billTitle">Current Bill amount</span>
+          <div className="billConsumtionContainer">
+          <span className="billConsumption">${bill}</span>
          </div>
       </div>
     </div>

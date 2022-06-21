@@ -1,25 +1,20 @@
 const { createClient } = require("@astrajs/rest");
-//const { ContactsOutlined } = require("@material-ui/icons");
 
 exports.handler = async function(event,context) {
 
   const account = event.queryStringParameters.account;
   console.log(account)
 
-  // create an {astra_db} client
+// Create client connection
   const astraClient = await createClient({
     astraDatabaseId: process.env.ASTRA_DB_ID,
     astraDatabaseRegion: process.env.ASTRA_DB_REGION,
     applicationToken: process.env.ASTRA_DB_APPLICATION_TOKEN,
   });
 
-  // collections are created automatically
-  // const accountCollection = astraClient.namespace(process.env.ASTRA_DB_KEYSPACE).collection("accountinfo");
   const basePath = `/api/rest/v2/keyspaces/${process.env.ASTRA_DB_KEYSPACE}/monthly`
 
   try{
-    // const result = await accountCollection.find()
-   // const {data,status} = await astraClient.get(`${basePath}/${account}`);
     const { data, status } = await astraClient.get(basePath, {
       params: {
         where: {
@@ -38,6 +33,4 @@ exports.handler = async function(event,context) {
       body: JSON.stringify(e),
     }
   }
-
-  
 }

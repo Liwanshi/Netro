@@ -18,7 +18,7 @@ export default function Billitem() {
   return (
     <div className="AccountItem">
         <h3>Account Details: </h3>
-        <p className="featuredAccountTitle"> Account Number: <span className="featuredConsumption">{accountno}</span></p>
+        <p className="billAccountTitle"> Account Number: <span className="billConsumption">{accountno}</span></p>
         <p>Your next payment is scheduled for Auto pay on 07/01/2022</p>
     </div>
   )

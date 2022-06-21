@@ -1,5 +1,4 @@
 import React from 'react';
-//import { useNavigate, Link } from 'react-router-dom'
 import { Link } from 'react-router-dom'
 
 import { useState } from "react"
@@ -9,7 +8,6 @@ import './Signin.css';
 
 
 export default function SignIn() {
- // let history = useNavigate()
   const [username,setusername] = useState(null)
   
   const eventhandler = async () => {
